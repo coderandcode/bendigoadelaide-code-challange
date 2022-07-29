@@ -18,8 +18,8 @@ describe('Feeding command samples into command processor', () => {
     test('Test case 1 - valid commands should get expected report', () => {
         output = (0, commandProcessor_1.default)('4 5 2 1 N MMRMLMQ', drone);
         expect(output).toBe('3 4 N');
-        output = (0, commandProcessor_1.default)('40 15 39 1 N MMRMLMQ', drone);
-        expect(output).toBe('39 4 N');
+        output = (0, commandProcessor_1.default)('8 10 3 1 N MMRMMRMQ', drone);
+        expect(output).toBe('5 2 S');
     });
     test('Test case 2 - throw exception if drone is out of area', () => {
         expect(() => {

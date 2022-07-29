@@ -32,7 +32,7 @@ const Drone_1 = __importDefault(require("./model/Drone"));
 // Init drone instance
 const drone = new Drone_1.default();
 //
-console.log('Welcome, please input a command (case insensitive):');
+console.log('Welcome, please input command (case insensitive):');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,

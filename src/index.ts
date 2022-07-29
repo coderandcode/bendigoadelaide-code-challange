@@ -6,7 +6,7 @@ import Drone from './model/Drone';
 const drone = new Drone();
 
 //
-console.log('Welcome, please input a command (case insensitive):');
+console.log('Welcome, please input command (case insensitive):');
 
 const rl = readline.createInterface({
   input: process.stdin,

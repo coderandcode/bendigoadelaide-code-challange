@@ -17,8 +17,8 @@ describe('Feeding command samples into command processor', () => {
     output = commandProcessor('4 5 2 1 N MMRMLMQ', drone);
     expect(output).toBe('3 4 N');
 
-    output = commandProcessor('40 15 39 1 N MMRMLMQ', drone);
-    expect(output).toBe('39 4 N');
+    output = commandProcessor('8 10 3 1 N MMRMMRMQ', drone);
+    expect(output).toBe('5 2 S');
   });
 
   test('Test case 2 - throw exception if drone is out of area', () => {
